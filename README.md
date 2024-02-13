@@ -62,7 +62,7 @@ And in this case, when HTML Guard is removed from the dependencies, the contents
 Add `_` prefix before any attribute so that, `src` becomes `_src`. HTML Guard will automatically load this element
 
 For example:
-```
+```html
 <img _src="image.jpg" />
 ```
 
