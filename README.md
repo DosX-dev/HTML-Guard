@@ -123,6 +123,12 @@ This will be useful for hiding debug logs from the browser console. Hooks functi
 <html>
 
 <head>
+<!-- Example of HTML-Guard protection -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
     <script src="../html-guard.js"></script>
     <script>
         // PROTECTION: Disable DevTools
@@ -140,7 +146,6 @@ This will be useful for hiding debug logs from the browser console. Hooks functi
         // PROTECTION: Disable console output
         HtmlGuard.protections.blockConsoleOutput();
 
-
         // ADDING: Add link to 'style.css'
         HtmlGuard.loader.loadStyleByRef("styles.css");
 
@@ -151,8 +156,16 @@ This will be useful for hiding debug logs from the browser console. Hooks functi
 
 <body>
     <div>
-        <p>Hello, world!</p>
+        <!-- '_id' is protected variant of 'id' -->
+        <p>Hello, world! Time: <span _id="time"></span></p>
+
+        <!-- '_src' is protected variant of 'src' -->
+        <img _src="test.jpg" _alt="Test image" />
+
     </div>
+
+    <a _href="https://github.com/DosX-dev/HTML-Guard">HTML Guard in GitHub!</a>
+
 </body>
 
 </html>
