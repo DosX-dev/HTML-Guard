@@ -1,6 +1,7 @@
 // https://github.com/DosX-dev/HTML-Guard
 // Protect your HTML pages!
 
+
 (() => {
     let scriptSrc = document.createElement("script");
 
