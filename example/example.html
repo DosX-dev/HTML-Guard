@@ -1,0 +1,39 @@
+<!-- Example of HTML-Guard protection -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../html-guard.js"></script>
+    <script>
+        // PROTECTION: Disable DevTools
+        HtmlGuard.protections.antiDevTools();
+
+        // PROTECTION: Disable context menu
+        HtmlGuard.protections.blockContextMenu();
+
+        // PROTECTION: Disable drag
+        HtmlGuard.protections.blockDrag();
+
+        // PROTECTION: Disable selection
+        HtmlGuard.protections.blockSelection();
+
+        // PROTECTION: Disable console output
+        HtmlGuard.protections.blockConsoleOutput();
+
+        // ADDING: Add link to 'style.css'
+        HtmlGuard.loader.loadStyleByRef("styles.css");
+
+        // ADDING: Run 'test.js' script
+        HtmlGuard.loader.loadScriptBySrc("test.js");
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>Hello, world! Time: <span id="time"></span></p>
+        <img html-guard-image-src="test.jpg" />
+    </div>
+</body>
+
+</html>
