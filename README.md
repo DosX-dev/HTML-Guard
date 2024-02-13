@@ -6,6 +6,7 @@ When you add the static module `html-guard.js` it will automatically obfuscate t
 Briefly about the functions of HTML Guard:
  * 🛡 Obfuscation of HTML (auto)
  * 🛡🛠 Dynamic adding of CSS/JS (requires setup)
+ * 🛡🛠 Protected attributes via prefix `_`
  * 🛡 Blocking DevTools in any browsers
  * 🛡 Lock the context menu
  * 🛡 Block dragging from a page
@@ -58,7 +59,7 @@ And in this case, when HTML Guard is removed from the dependencies, the contents
 
 ### 🔒🖼🔴 Dynamic attributes protection (recommend)
 
-Add `_` before any attribute so that, `src` becomes `_src`. HTML Guard will automatically load this element
+Add `_` prefix before any attribute so that, `src` becomes `_src`. HTML Guard will automatically load this element
 
 For example:
 ```
