@@ -33,7 +33,7 @@ Briefly about the functions of HTML Guard:
 
 ## ✅ Configure
 
-### ⚙️🔴 Safe style/script adding
+### ⚙️🔴 Safe style/script adding protection (recommend)
 Avoid using `<link>`. Dynamically load .css and .js files! This method makes it possible to bypass downloaders of sites such as [web2zip.com](https://web2zip.com/). Dynamic addition of site resources makes it impossible to copy them during static analysis.
 And in this case, when HTML Guard is removed from the dependencies, the contents of the web application will not be able to load for obvious reasons.
 
@@ -54,6 +54,15 @@ And in this case, when HTML Guard is removed from the dependencies, the contents
     // ADDING: Add script "test.js" to head after document loading
     HtmlGuard.loader.loadScriptBySrc_ContentLoaded("test.js");
 </script>
+```
+
+### 🖼🔴 Dynamic attributes protection (recommend)
+
+Add `_` before any attribute so that, `src` becomes `_src`. HTML Guard will automatically load this element
+
+For example:
+```
+<img _src="image.jpg" />
 ```
 
 ### 🔒✨ Block Dev-Tools (recommended)
