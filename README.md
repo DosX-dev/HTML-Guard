@@ -21,7 +21,7 @@ Briefly about the functions of HTML Guard:
 <html>
     <head>
         <!-- Site protection ON! -->
-        <script src="https://raw.githubusercontent.com/DosX-dev/HTML-Guard/main/html-guard.min.js"></script>
+        <script src="html-guard.min.js"></script>
         <script>
             // Configure protection & resource loading
         </script>
