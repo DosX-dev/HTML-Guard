@@ -157,14 +157,19 @@ const HtmlGuard = {
 
 
             // Protected images
-            for (const element of document.querySelectorAll("img")) {
-                const guardedImageAttributeName = "html-guard-image-src";
+            for (const element of document.querySelectorAll("*")) {
 
-                let attr = element.getAttribute(guardedImageAttributeName);
-                if (attr !== null) {
-                    element.src = attr;
-                    element.removeAttribute(guardedImageAttributeName);
+                const attributes = element.attributes;
+
+                for (const attribute of attributes) {
+                    if (attribute.name.startsWith("_")) {
+                        element.setAttribute(attribute.name.substring(1), attribute.value);
+
+                        element.removeAttribute(attribute.name);
+                    }
                 }
+
+
             }
 
 
