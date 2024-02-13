@@ -117,11 +117,6 @@ This will be useful for hiding debug logs from the browser console. Hooks functi
 
 ## 📄 Example of using
 ```html
-<!-- Example of HTML-Guard protection -->
-
-<!DOCTYPE html>
-<html>
-
 <head>
 <!-- Example of HTML-Guard protection -->
 
