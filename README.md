@@ -170,3 +170,6 @@ This will be useful for hiding debug logs from the browser console. Hooks functi
 
 </html>
 ```
+
+## 📖 Note
+This module is intended more for protecting web applications than for simple sites. If you are developing an application using frameworks like ReactJS, VueJS (and so on), then this project is perfect for you
