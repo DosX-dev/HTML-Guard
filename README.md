@@ -61,6 +61,10 @@ And in this case, when HTML Guard is removed from the dependencies, the contents
 
 Add `_` prefix before any attribute so that, `src` becomes `_src`. HTML Guard will automatically load this element
 
+This protection method has 2 advantages:
+ * Pictures and other resources will not be loaded through a static download of the site
+ * Without HTML Guard attributes will not load
+
 For example:
 ```html
 <img _src="image.jpg" />
