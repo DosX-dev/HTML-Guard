@@ -156,7 +156,7 @@ const HtmlGuard = {
             }
 
 
-            // Protected images
+            // Protected attributes
             for (const element of document.querySelectorAll("*")) {
 
                 const attributes = element.attributes;
