@@ -1,3 +1,6 @@
+> [!NOTE]
+> 🌟 Try the more advanced project **[WebSafeCompiler](https://github.com/DosX-dev/WebSafeCompiler)** for reliable protection of your site from copying or any analysis of the source code!
+
 # 🛢 HTML Guard
 When you add the static module `html-guard.js` it will automatically obfuscate the page layout. Protect your web application/site.
 
